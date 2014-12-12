@@ -10,6 +10,8 @@ This repository takes your string and split its letters, append to a seperated c
 ###Version
 1.0
 
+###[Demo]
+
 ###Installation
 First add css and js files to your page
 ```sh
@@ -42,4 +44,7 @@ All effects applies letter after letter. if you want just split your string run 
   - ***actionTimeout:*** milliseconds number default is 100, this option defines the time delay between each letter action
   - ***transitionTime:*** seconds or milliseconds number, transition time. default is 0.2s
   - ***transitionEase:*** any css3 transition type could be use, for example "ease-out", default is "linear"
+
+
+[Demo]: http://hajimali.com/string-splitter
  
