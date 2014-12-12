@@ -1,5 +1,5 @@
 ##String Splitter
-This repository takes your string and split its letters, append to a seperated container right after the string container.
+This repository takes your string and split its letters, append to a seperated container right after the string container. this plugin uses css3 for animation so it works only on modern browsers.
 
 ###Browsers support
 * Firefox 4.0+
