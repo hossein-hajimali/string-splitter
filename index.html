@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery string splitter by Hossein Haji Mali</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" media="all" href="library/css/jquery.string.splitter.css">
+    </head>
+    <body>
+        <div class="main-wrapper">
+            <div class="wrapper">Hello world!</div>
+        </div>
+        
+        <div class="inputs">
+            <div>
+                <input type="text" id="actionTimeout" data-name="actionTimeout" value="100"> actionTimeout
+            </div>
+            <div>
+                <input type="text" id="transitionTime" data-name="transitionTime" value="0.2"> transitionTime
+            </div>
+            <div>
+                <input type="text" id="transitionEase" data-name="transitionEase" value="linear"> transitionEase
+            </div>
+            <div>
+                <input type="text" id="direction" data-name="direction" value="ltr"> direction
+            </div>
+
+        </div>
+        <div class="buttons">
+            <button data-name="fadeIn"></button>
+            <button data-name="fadeOut"></button>
+            <button data-name="fromTop"></button>
+            <button data-name="toTop"></button>
+            <button data-name="fromBottom"></button>
+            <button data-name="toBottom"></button>
+            <button data-name="fromRight"></button>
+            <button data-name="toRight"></button>
+            <button data-name="fromLeft"></button>
+            <button data-name="toLeft"></button>
+            <button data-name="fromTopRight"></button>
+            <button data-name="fromTopLeft"></button>
+            <button data-name="fromBottomRight"></button>
+            <button data-name="fromBottomLeft"></button>
+            <button data-name="toTopRight"></button>
+            <button data-name="toTopLeft"></button>
+            <button data-name="toBottomRight"></button>
+            <button data-name="toBottomLeft"></button>
+        </div>
+
+        <!-- Scripts -->
+        <script type="text/javascript" src="library/js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="library/js/min/jquery.string.splitter.min.js"></script>
+        <script type="text/javascript">
+            
+            $('.buttons > button').each(function(){
+                var $button = $(this),
+                    $effect = $button.data('name');
+                    $button.html($effect);
+                $button.on('click', function(){
+                    var $direction = $('#direction').val(),
+                        $transitionTime = $('#transitionTime').val(),
+                        $transitionEase = $('#transitionEase').val(),
+                        $actionTimeout = $('#actionTimeout').val();
+                    $('.wrapper').stringSplitter({
+                        effect: $effect,
+                        direction: $direction,
+                        actionTimeout: $actionTimeout,
+                        transitionTime: $transitionTime,
+                        transitionEase: $transitionEase
+                    });
+                });
+            });
+        </script>
+        <!-- /Scripts -->
+    </body>
+</html>

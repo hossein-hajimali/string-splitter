@@ -1,0 +1,153 @@
+/* global styles */
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+}
+
+.main-wrapper {
+  width: 400px;
+  text-align: center;
+  margin: 10% auto 100px;
+}
+
+.wrapper, .each-letter {
+  font-size: 40px;
+}
+
+.inputs {
+  width: 40%;
+  display: inline-block;
+}
+
+.buttons {
+  text-align: center;
+  width: 50%;
+  display: inline-block;
+}
+.buttons > button {
+  display: inline-block;
+}
+
+/* stringSplitter styles */
+.letters-wrapper {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.each-letter {
+  position: relative;
+  display: inline-block;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.each-letter.fromRight.is-right,
+.each-letter.toRight.is-right {
+  -webkit-transform: translate(20px, 0);
+  -ms-transform: translate(20px, 0);
+  transform: translate(20px, 0);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.each-letter.fromLeft.is-left,
+.each-letter.toLeft.is-left {
+  -webkit-transform: translate(-20px, 0);
+  -ms-transform: translate(-20px, 0);
+  transform: translate(-20px, 0);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.each-letter.fromBottom.is-bottom {
+  -webkit-transform: translate(0, 20px);
+  -ms-transform: translate(0, 20px);
+  transform: translate(0, 20px);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.each-letter.fromTop.is-top,
+.each-letter.toTop.is-top {
+  -webkit-transform: translate(0, -20px);
+  -ms-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.each-letter.fromTopRight.is-top.is-right,
+.each-letter.toTopRight.is-top.is-right {
+  -webkit-transform: translate(20px, -20px);
+  -ms-transform: translate(20px, -20px);
+  transform: translate(20px, -20px);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.each-letter.fromTopLeft.is-top.is-left,
+.each-letter.toTopLeft.is-top.is-left {
+  -webkit-transform: translate(-20px, -20px);
+  -ms-transform: translate(-20px, -20px);
+  transform: translate(-20px, -20px);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.each-letter.fromBottomRight.is-bottom.is-right,
+.each-letter.toBottomRight.is-bottom.is-right {
+  -webkit-transform: translate(20px, 20px);
+  -ms-transform: translate(20px, 20px);
+  transform: translate(20px, 20px);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.each-letter.fromBottomLeft.is-bottom.is-left,
+.each-letter.toBottomLeft.is-bottom.is-left {
+  -webkit-transform: translate(-20px, 20px);
+  -ms-transform: translate(-20px, 20px);
+  transform: translate(-20px, 20px);
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.each-letter.fadeIn,
+.each-letter.fadeOut {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.each-letter.fromTop,
+.each-letter.fromBottom,
+.each-letter.toTop,
+.each-letter.fromRight,
+.each-letter.toRight,
+.each-letter.fromLeft,
+.each-letter.toLeft,
+.each-letter.fromTopRight,
+.each-letter.fromTopLeft,
+.each-letter.fromBottomRight,
+.each-letter.fromBottomLeft,
+.each-letter.toTopRight,
+.each-letter.toTopLeft,
+.each-letter.toBottomRight,
+.each-letter.toBottomLeft,
+.each-letter.blink {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.each-letter.fadeIn.fade-in,
+.each-letter.fadeOut.fade-in {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.each-letter.blink.fade-out {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
