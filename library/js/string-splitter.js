@@ -1,3 +1,8 @@
+// string-splitter, a jquery & css3 plugin
+// Publisher: Hossein Haji Mali
+// Website: http://hajimali.com/string-spliter
+// github: https://github.com/hossein-haijmali/string-splitter
+//------------------------------------------------------------------
 (function($){
 	$.fn.stringSplitter = function(options){
 		function animation(object, time, ease){
