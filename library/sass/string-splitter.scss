@@ -1,0 +1,81 @@
+// imports
+@import "vendors/bootstrap/mixins";
+
+/* string-splitter, a jquery & css3 plugin */
+/* Publisher: Hossein Haji Mali */
+/* Website: http://hajimali.com/string-spliter */
+/* github: https://github.com/hossein-haijmali/string-splitter */
+/*------------------------------------------------------------------*/
+.letters-wrapper{
+	position: relative;
+	padding: 0; margin: 0;
+	width: 100%;
+}
+.each-letter{
+	position: relative;
+	display: inline-block;
+	@include opacity(1);
+}
+.each-letter.fromRight.is-right,
+.each-letter.toRight.is-right{
+	@include translate(20px,0);
+	@include opacity(0);
+}
+.each-letter.fromLeft.is-left,
+.each-letter.toLeft.is-left{
+	@include translate(-20px,0);
+	@include opacity(0);
+}
+.each-letter.fromBottom.is-bottom{
+	@include translate(0,20px);
+	@include opacity(0);
+}
+.each-letter.fromTop.is-top,
+.each-letter.toTop.is-top{
+	@include translate(0,-20px);
+	@include opacity(0);
+}
+.each-letter.fromTopRight.is-top.is-right,
+.each-letter.toTopRight.is-top.is-right{
+	@include translate(20px,-20px);
+	@include opacity(0);
+}
+.each-letter.fromTopLeft.is-top.is-left,
+.each-letter.toTopLeft.is-top.is-left{
+	@include translate(-20px,-20px);
+	@include opacity(0);
+}
+.each-letter.fromBottomRight.is-bottom.is-right,
+.each-letter.toBottomRight.is-bottom.is-right{
+	@include translate(20px,20px);
+	@include opacity(0);
+}
+.each-letter.fromBottomLeft.is-bottom.is-left,
+.each-letter.toBottomLeft.is-bottom.is-left{
+	@include translate(-20px,20px);
+	@include opacity(0);
+}
+.each-letter.fadeIn,
+.each-letter.fadeOut{
+	@include opacity(0);
+}
+.each-letter.fromTop,
+.each-letter.fromBottom,
+.each-letter.toTop,
+.each-letter.fromRight,
+.each-letter.toRight,
+.each-letter.fromLeft,
+.each-letter.toLeft,
+.each-letter.fromTopRight,
+.each-letter.fromTopLeft,
+.each-letter.fromBottomRight,
+.each-letter.fromBottomLeft,
+.each-letter.toTopRight,
+.each-letter.toTopLeft,
+.each-letter.toBottomRight,
+.each-letter.toBottomLeft,
+.each-letter.blink,
+.each-letter.fadeIn.fade-in,
+.each-letter.fadeOut.fade-in{
+	@include opacity(1);
+}
