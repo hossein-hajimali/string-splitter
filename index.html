@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Jquery string splitter by Hossein Haji Mali</title>
+        <title>string splitter by Hossein Haji Mali</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Mandali' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" media="all" href="library/css/style.css">
         <link rel="stylesheet" type="text/css" media="all" href="library/css/string-splitter.css">
         <style type="text/css">
-            body,html{
-                padding: 0; margin: 0;
-                font-family: arial;
-            }
-            .main-wrapper{
-                width: 400px;
-                text-align: center;
-                margin: 10% auto 100px;
-            }
-            #myString,.each-letter{
-                font-size: 40px;    
-            }
-            .inputs{
-                width: 40%;
-                display: inline-block;
-            }
-            .buttons{
-                text-align: center;
-                width: 50%;
-                display: inline-block;
 
-                > button{
-                    display: inline-block;
-                }
-            }
         </style>
     </head>
     <body>
         <div class="main-wrapper">
-            <div id="myString">Hello world!</div>
-        </div>
-        
-        <div class="inputs">
-            <div>
-                <input type="text" id="actionTimeout" data-name="actionTimeout" value="100"> actionTimeout
+            <ul class="socials">
+                <li><a href="https://twitter.com/hossein_hm" title="@hossein_hm"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/hossein.hmm"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://github.com/hossein-haijmali"><i class="fa fa-github"></i></a></li>
+            </ul>
+            <h1 class="title">String Splitter</h1>
+            <h4 class="mini-des">A jquery &amp; Css3 Plugin</h4>
+            <div class="result-wrapper">
+                <div id="myString">String Splitter</div>
             </div>
-            <div>
-                <input type="text" id="transitionTime" data-name="transitionTime" value="0.2"> transitionTime
-            </div>
-            <div>
-                <input type="text" id="transitionEase" data-name="transitionEase" value="linear"> transitionEase
-            </div>
-            <div>
-                <input type="text" id="direction" data-name="direction" value="ltr"> direction
+            <h4 class="devider"><span>options</span></h4>
+            <div class="options clearfix">
+                <div class="left-section">
+                    <div class="buttons">
+                        <button data-name="fadeIn"></button>
+                        <button data-name="fadeOut"></button>
+                        <button data-name="fromTop"></button>
+                        <button data-name="toTop"></button>
+                        <button data-name="fromBottom"></button>
+                        <button data-name="toBottom"></button>
+                        <button data-name="fromRight"></button>
+                        <button data-name="toRight"></button>
+                        <button data-name="fromLeft"></button>
+                        <button data-name="toLeft"></button>
+                        <button data-name="fromTopRight"></button>
+                        <button data-name="fromTopLeft"></button>
+                        <button data-name="fromBottomRight"></button>
+                        <button data-name="fromBottomLeft"></button>
+                        <button data-name="toTopRight"></button>
+                        <button data-name="toTopLeft"></button>
+                        <button data-name="toBottomRight"></button>
+                        <button data-name="toBottomLeft"></button>
+                    </div>
+                </div>
+                <div class="right-section">
+                    <div class="inputs">
+                        <div>
+                            actionTimeout:
+                            <input type="text" id="actionTimeout" data-name="actionTimeout" value="100"> 
+                        </div>
+                        <div>
+                            transitionTime:
+                            <input type="text" id="transitionTime" data-name="transitionTime" value="0.2"> 
+                        </div>
+                        <div>
+                            transitionEase:
+                            <input type="text" id="transitionEase" class="large" data-name="transitionEase" value="linear"> 
+                        </div>
+                        <div>
+                            direction:
+                            <input type="text" id="direction" data-name="direction" value="ltr">
+                        </div>
+                    </div>
+                </div>
             </div>
 
+            <a href="https://github.com/hossein-haijmali/string-splitter" target="_blank" class="download-button">Download <i class="fa fa-download"></i></a>
+
+
         </div>
-        <div class="buttons">
-            <button data-name="fadeIn"></button>
-            <button data-name="fadeOut"></button>
-            <button data-name="fromTop"></button>
-            <button data-name="toTop"></button>
-            <button data-name="fromBottom"></button>
-            <button data-name="toBottom"></button>
-            <button data-name="fromRight"></button>
-            <button data-name="toRight"></button>
-            <button data-name="fromLeft"></button>
-            <button data-name="toLeft"></button>
-            <button data-name="fromTopRight"></button>
-            <button data-name="fromTopLeft"></button>
-            <button data-name="fromBottomRight"></button>
-            <button data-name="fromBottomLeft"></button>
-            <button data-name="toTopRight"></button>
-            <button data-name="toTopLeft"></button>
-            <button data-name="toBottomRight"></button>
-            <button data-name="toBottomLeft"></button>
-        </div>
+            
 
         <!-- Scripts -->
         <script type="text/javascript" src="library/js/jquery-1.11.0.min.js"></script>

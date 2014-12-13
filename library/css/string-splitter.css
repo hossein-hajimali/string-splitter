@@ -3,38 +3,6 @@
 /* Website: http://hajimali.com/string-spliter */
 /* github: https://github.com/hossein-haijmali/string-splitter */
 /*------------------------------------------------------------------*/
-/* global styles */
-body, html {
-  padding: 0;
-  margin: 0;
-  font-family: arial;
-}
-
-.main-wrapper {
-  width: 400px;
-  text-align: center;
-  margin: 10% auto 100px;
-}
-
-#myString, .each-letter {
-  font-size: 40px;
-}
-
-.inputs {
-  width: 40%;
-  display: inline-block;
-}
-
-.buttons {
-  text-align: center;
-  width: 50%;
-  display: inline-block;
-}
-.buttons > button {
-  display: inline-block;
-}
-
-/* stringSplitter styles */
 .letters-wrapper {
   position: relative;
   padding: 0;
