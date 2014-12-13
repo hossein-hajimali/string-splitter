@@ -10,7 +10,7 @@ This repository takes your string and split its letters, append to a seperated c
 ###Version
 1.0
 
-###[Demo]
+####See [Demo]
 
 ###Installation
 First add css and js files to your page
