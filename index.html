@@ -4,11 +4,11 @@
         <title>Jquery string splitter by Hossein Haji Mali</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" media="all" href="library/css/jquery.string.splitter.css">
+        <link rel="stylesheet" type="text/css" media="all" href="library/css/string-splitter.css">
     </head>
     <body>
         <div class="main-wrapper">
-            <div class="wrapper">Hello world!</div>
+            <div id="myString">Hello world!</div>
         </div>
         
         <div class="inputs">
@@ -49,7 +49,7 @@
 
         <!-- Scripts -->
         <script type="text/javascript" src="library/js/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="library/js/min/jquery.string.splitter.min.js"></script>
+        <script type="text/javascript" src="library/js/min/string-splitter.min.js"></script>
         <script type="text/javascript">
             
             $('.buttons > button').each(function(){
@@ -61,7 +61,7 @@
                         $transitionTime = $('#transitionTime').val(),
                         $transitionEase = $('#transitionEase').val(),
                         $actionTimeout = $('#actionTimeout').val();
-                    $('.wrapper').stringSplitter({
+                    $('#myString').stringSplitter({
                         effect: $effect,
                         direction: $direction,
                         actionTimeout: $actionTimeout,
