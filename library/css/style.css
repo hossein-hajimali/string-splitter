@@ -2485,6 +2485,7 @@ body, html {
   background-color: #f3f3f3;
   margin: auto;
   border: 10px solid rgba(212, 131, 143, 0.3);
+  padding: 0 15px;
 }
 
 .devider {
@@ -2594,6 +2595,9 @@ body, html {
 }
 .inputs > div > input.large {
   width: 100px;
+}
+.inputs > div > input.full-size {
+  width: 100%;
 }
 
 .download-button {

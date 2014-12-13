@@ -49,7 +49,7 @@
             <h1 class="title">String Splitter</h1>
             <h4 class="mini-des">A jquery &amp; Css3 Plugin</h4>
             <div class="result-wrapper">
-                <div id="myString">String Splitter</div>
+                <div id="myString">Be the change you wish to see in the world</div>
             </div>
             <h4 class="devider"><span>options</span></h4>
             <div class="options clearfix">
@@ -77,6 +77,10 @@
                 </div>
                 <div class="right-section">
                     <div class="inputs">
+                        <div>
+                            Your text:
+                            <input type="text" id="customText" class="full-size" data-name="customText" value="Be the change you wish to see in the world">
+                        </div>
                         <div>
                             actionTimeout (ms):
                             <input type="text" id="actionTimeout" data-name="actionTimeout" value="100">
@@ -114,10 +118,11 @@
                     $button.html($effect);
                 $button.on('click', function(){
                     var $direction = $('#direction').val(),
+                        $customText = $('#customText').val(),
                         $transitionTime = $('#transitionTime').val(),
                         $transitionEase = $('#transitionEase').val(),
                         $actionTimeout = $('#actionTimeout').val();
-                    $('#myString').stringSplitter({
+                    $('#myString').html($customText).stringSplitter({
                         effect: $effect,
                         direction: $direction,
                         actionTimeout: $actionTimeout,
