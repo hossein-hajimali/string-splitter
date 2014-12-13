@@ -1,3 +1,8 @@
+/* string-splitter, a jquery & css3 plugin */
+/* Publisher: Hossein Haji Mali */
+/* Website: http://hajimali.com/string-spliter */
+/* github: https://github.com/hossein-haijmali/string-splitter */
+/*------------------------------------------------------------------*/
 /* global styles */
 body, html {
   padding: 0;
@@ -136,18 +141,9 @@ body, html {
 .each-letter.toTopLeft,
 .each-letter.toBottomRight,
 .each-letter.toBottomLeft,
-.each-letter.blink {
-  opacity: 1;
-  filter: alpha(opacity=100);
-}
-
+.each-letter.blink,
 .each-letter.fadeIn.fade-in,
 .each-letter.fadeOut.fade-in {
   opacity: 1;
   filter: alpha(opacity=100);
-}
-
-.each-letter.blink.fade-out {
-  opacity: 0;
-  filter: alpha(opacity=0);
 }
