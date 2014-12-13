@@ -1,0 +1,192 @@
+// imports
+@import "vendors/bootstrap/mixins";
+@import "vendors/mixins";
+@import "vendors/fontawesome/font-awesome";
+
+/* string-splitter, a jquery & css3 plugin */
+/* Publisher: Hossein Haji Mali */
+/* Website: http://hajimali.com/string-spliter */
+/* github: https://github.com/hossein-haijmali/string-splitter */
+/*------------------------------------------------------------------*/
+*{
+    @include box-sizing(border-box);
+}
+a, a:hover, a:focus, a:active{
+    outline: 0 none;
+    text-decoration: none;
+}
+.clearfix:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+body,html{
+    padding: 0; margin: 0;
+    height: 100%;
+    font-family: 'Mandali', sans-serif;
+    background-color: #312736;
+    color: #312736;
+    @include box-sizing(border-box);
+}
+.title{
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+.mini-des{
+    margin-top: 0;
+}
+.main-wrapper{
+    width: 800px;
+    //min-height: 1500px;
+    min-height: 100%;
+    position: relative;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #D9D9D9;
+    @include box-shadow(0 0 5px 2px rgba(0,0,0,0.8));
+}
+.socials{
+    position: absolute;
+    text-align: right;
+    top: 10px; right: 20px;
+    background-color: #312736;
+    padding: 0; margin: 0;
+    line-height: 1.4;
+    padding: 0 10px;
+    @include border-radius(2px);
+
+    > li{
+        display: inline-block;
+        margin: 5px;
+
+        > a{
+            color: #D9D9D9;
+            &:hover{
+                color: #D4838F;
+            }
+        }
+    }
+}
+.result-wrapper{
+	position: relative;
+	width: 500px;
+	height: 300px;
+	background-color: lighten(#D9D9D9, 10%);
+	margin: auto;
+	border: 10px solid rgba(#D4838F, 0.3);
+	//@include border-radius(5px);
+}
+.devider{
+    text-transform: capitalize;
+    width: 90%;
+    margin: 10px auto 20px;
+    position: relative;
+
+    > span{
+        background-color: #D9D9D9;
+        width: 90px;
+        position: relative;
+        display: inline-block;
+    }
+    &:before{
+        content: "";
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 18px; left: 0;
+        background-color: #312736;
+    }
+}
+#myString,.each-letter{
+    font-size: 40px; 
+    font-weight: bold;
+}
+#myString,.letters-wrapper{
+    position: absolute;
+    top: 50%; left: 50%;
+    @include translate(-50%, -50%);
+    width: 100%;
+}
+.left-section, .right-section{
+    padding: 0 20px;
+    display: inline-block;
+}
+.left-section{
+    float: left;
+    width: 60%;
+    //border-right: 1px solid lighten(#312736, 50%);
+}
+.right-section{
+    float: right;
+    width: 40%;
+}
+.options{
+    height: 220px;
+    padding-right: 12px;
+}
+.buttons{
+    text-align: center;
+
+    > button{
+        display: inline-block;
+        width: 120px;
+        line-height: 2;
+        background-color: #D4838F;
+        border: 1px solid lighten(#312736, 30%);
+        @include border-radius(5px);
+        color: #fff;
+        margin-bottom: 3px;
+        cursor: pointer;
+
+        &:hover{
+            @include gradient(lighten(#D4838F, 5%),lighten(#D4838F, 1%))
+        }
+    }
+}
+.inputs{
+
+    > div{
+        width: 100%;
+        text-align: left;
+        //background-color: #ccc;
+        margin: 2px 0;
+
+        > input{
+            width: 60px;
+            float: right;
+            margin-top: 3px;
+            line-height: 1.6;
+            text-align: center;
+            background: #eee;
+            border: 1px solid lighten(#312736, 30%);
+            color: #312736;
+            
+            &:focus{
+                background-color: #fff;
+                border: 1px solid lighten(#312736, 40%);
+            }
+            &.large{
+                width: 100px;
+            }
+        }
+    }
+}
+.download-button{
+    display: inline-block;
+    color: #fff;
+    line-height: 2;
+    padding: 0 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    font-size: 30px;
+    background-color: lighten(#312736, 10%);
+    //text-transform: uppercase;
+    @include border-radius(10px);
+    @include box-shadow(0 0 5px 1px rgba(0,0,0,0.3));
+
+    &:hover{
+        @include gradient(lighten(#312736, 15%),lighten(#312736, 12%))
+    }
+}
