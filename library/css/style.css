@@ -2575,6 +2575,7 @@ body, html {
 .inputs > div {
   width: 100%;
   text-align: left;
+  clear: both;
   margin: 2px 0;
 }
 .inputs > div > input {
