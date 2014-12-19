@@ -2603,11 +2603,11 @@ body, html {
 .download-button {
   display: inline-block;
   color: #fff;
-  line-height: 2;
+  line-height: 3;
   padding: 0 30px;
   margin-top: 50px;
   margin-bottom: 80px;
-  font-size: 30px;
+  font-size: 20px;
   background-color: #4c3c54;
   border-radius: 10px;
   -webkit-border-radius: 10px;
