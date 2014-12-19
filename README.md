@@ -16,8 +16,8 @@ This repository takes your string and split its letters, append to a seperated c
 First add css and js files to your page
 ```sh
 <script type="text/javascript" src="library/js/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="library/js/min/jquery.string.splitter.min.js"></script>
-<link rel="stylesheet" type="text/css" media="all" href="library/css/jquery.string.splitter.css">
+<script type="text/javascript" src="library/js/min/string.splitter.min.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="library/css/string.splitter.css">
 ```
 Now you can create your html very simple 
 ```sh
